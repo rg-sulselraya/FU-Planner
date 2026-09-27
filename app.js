@@ -1,5 +1,5 @@
 /* Set this after deploying Code.gs as a Google Apps Script Web App. */
-const API_URL = 'https://script.google.com/macros/s/AKfycbzoVLW0P2W5X_WEg3ykA7L8And6bDimsZ-OsFUzZ-5ea10GTN-I5swKMTdntXcINzKV/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbyCM7Mcm-y1QPnIhnDvrfDeVaR7BTlAW7QdOOX6nkicz53v_z2oT_tLxGGeSpAlEn4l/exec';
 const state = { kind: 'agent', masters: { agents: [], grades: [], schools: [] }, selectedAgent: null, autocompleteIndex: -1, user: null, token: localStorage.getItem('fu_token') || '', rows: [] };
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
