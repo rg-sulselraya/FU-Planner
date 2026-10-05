@@ -4,7 +4,7 @@ Frontend statis untuk GitHub Pages dan backend Google Apps Script untuk spreadsh
 
 Repository deployment: `rg-sulselraya/FU-Planner`  
 Target path: `https://rgsulselraya.xyz/activityplanner`  
-Apps Script API: `https://script.google.com/macros/s/AKfycbyCM7Mcm-y1QPnIhnDvrfDeVaR7BTlAW7QdOOX6nkicz53v_z2oT_tLxGGeSpAlEn4l/exec`
+Apps Script API: `https://script.google.com/macros/s/AKfycby8YzNi2tz5t26vJfKiUx12SM9b3qBUMmEQItkTSprTgAPGjzBaYKWgwWQ1H7ObRPl4/exec`
 
 ## Struktur
 
@@ -25,7 +25,7 @@ followup-planner/
 4. Deploy → New deployment → Web app.
    - Execute as: Me
    - Who has access: Anyone
-5. URL deployment yang sedang dikonfigurasi pada frontend: `https://script.google.com/macros/s/AKfycbyCM7Mcm-y1QPnIhnDvrfDeVaR7BTlAW7QdOOX6nkicz53v_z2oT_tLxGGeSpAlEn4l/exec`. Jangan masukkan password, PIN, credential, atau Spreadsheet ID ke frontend.
+5. URL deployment yang sedang dikonfigurasi pada frontend: `https://script.google.com/macros/s/AKfycby8YzNi2tz5t26vJfKiUx12SM9b3qBUMmEQItkTSprTgAPGjzBaYKWgwWQ1H7ObRPl4/exec`. Jangan masukkan password, PIN, credential, atau Spreadsheet ID ke frontend.
 
 Backend membaca sheet `Agen`, `Grade`, `Sekolah`, dan `Plan FU` persis dengan nama tersebut. CacheService digunakan untuk master data dan LockService + batch `setValues()` digunakan saat menyimpan.
 
