@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#14213d"><title>FollowUp Planner</title>
+  <meta name="theme-color" content="#14213d"><meta name="application-name" content="Activity Planner"><meta name="apple-mobile-web-app-title" content="Activity Planner"><title>Activity Planner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,8 +11,8 @@
   <div id="toast" class="toast" role="status"></div>
   <main id="loginView" class="login-shell">
     <section class="login-card">
-      <div class="logo-mark">FU</div><p class="eyebrow">FOLLOW-UP WORKSPACE</p>
-      <h1>FollowUp<br><span>Planner</span></h1><p class="muted">Plan your follow-up, track your progress.</p>
+      <div class="logo-mark">AP</div><p class="eyebrow">ACTIVITY WORKSPACE</p>
+      <h1>Activity<br><span>Planner</span></h1><p class="muted">Plan. Execute. Track.</p>
       <div class="login-tabs"><button class="tab active" data-kind="agent">Agen</button><button class="tab" data-kind="bm">BM</button><button class="tab" data-kind="admin">Admin</button></div>
       <form id="loginForm">
         <div id="agentFields"><label class="autocomplete-field">Nama Agen<div class="autocomplete-wrap"><input id="agentName" type="text" autocomplete="off" placeholder="Ketik nama Agen..." aria-autocomplete="list" aria-controls="agentSuggestions" aria-expanded="false" required><div id="agentSuggestions" class="autocomplete-list" role="listbox"></div></div><span id="selectedAgentBranch" class="selected-branch" aria-live="polite"></span></label><label id="pinField" class="pin-field hidden">PIN<input id="agentPin" type="password" autocomplete="current-password" placeholder="Masukkan PIN" required></label></div>
@@ -20,13 +20,13 @@
         <div id="adminFields" class="hidden"><label>Password Admin<input id="adminPassword" type="password" autocomplete="current-password" placeholder="Masukkan password"></label></div>
         <button class="primary full" id="loginButton" type="submit"><span class="button-label">Masuk</span><span class="spinner"></span></button>
       </form><p id="loginError" class="form-error" role="alert"></p>
-      <p class="tiny">Secure access · FollowUp Planner</p>
+      <p class="tiny">Secure access · Activity Planner</p>
     </section>
   </main>
 
   <div id="appView" class="app-shell hidden">
-    <aside class="sidebar"><div class="brand"><div class="logo-mark small">FU</div><div><strong>FollowUp</strong><span>Planner</span></div></div><p class="sidebar-caption">Your daily follow-up workspace</p><nav id="agentNav"><button class="nav-item active" data-view="dashboard"><span>◈</span> Overview</button><button class="nav-item" data-view="plan"><span>＋</span> Buat Plan FU</button><button class="nav-item" data-view="history"><span>▤</span> History</button></nav><nav id="bmNav" class="hidden"><button class="nav-item active" data-view="bm-dashboard"><span>◈</span> Dashboard</button><button class="nav-item" data-view="bm-plan"><span>＋</span> Plan Activity</button><button class="nav-item" data-view="bm-visit"><span>◉</span> School Visit</button><button class="nav-item" data-view="bm-history"><span>▤</span> History</button></nav><div class="sidebar-bottom"><div class="user-mini"><div class="avatar" id="userAvatar">A</div><div><strong id="sidebarName">Agen</strong><span id="sidebarBranch">Branch</span></div></div><button id="logoutButton" class="logout">Keluar</button></div></aside>
-    <section class="content"><header class="topbar"><div><p class="eyebrow">FOLLOW-UP PLANNER</p><h2 id="pageTitle">Overview</h2></div><div class="topbar-date" id="todayLabel"></div></header><div id="pageContent"></div></section>
+    <aside class="sidebar"><div class="brand"><div class="logo-mark small">AP</div><div><strong>Activity</strong><span>Planner</span></div></div><p class="sidebar-caption">Plan. Execute. Track.</p><nav id="agentNav"><button class="nav-item active" data-view="dashboard"><span>◈</span> Overview</button><button class="nav-item" data-view="plan"><span>＋</span> Buat Plan FU</button><button class="nav-item" data-view="history"><span>▤</span> History</button></nav><nav id="bmNav" class="hidden"><button class="nav-item active" data-view="bm-dashboard"><span>◈</span> Dashboard</button><button class="nav-item" data-view="bm-plan"><span>＋</span> Plan Activity</button><button class="nav-item" data-view="bm-visit"><span>◉</span> School Visit</button><button class="nav-item" data-view="bm-history"><span>▤</span> History</button></nav><div class="sidebar-bottom"><div class="user-mini"><div class="avatar" id="userAvatar">A</div><div><strong id="sidebarName">Agen</strong><span id="sidebarBranch">Branch</span></div></div><button id="logoutButton" class="logout">Keluar</button></div></aside>
+    <section class="content"><header class="topbar"><div><p class="eyebrow">ACTIVITY PLANNER</p><h2 id="pageTitle">Overview</h2></div><div class="topbar-date" id="todayLabel"></div></header><div id="pageContent"></div></section>
   </div>
   <script src="app.js"></script>
 </body>

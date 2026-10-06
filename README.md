@@ -1,6 +1,6 @@
-# FollowUp Planner
+# Activity Planner
 
-Frontend statis untuk GitHub Pages dan backend Google Apps Script untuk spreadsheet **FollowUp Planner Database**.
+Frontend statis untuk GitHub Pages dan backend Google Apps Script untuk spreadsheet **Activity Planner Database**.
 
 Repository deployment: `rg-sulselraya/FU-Planner`  
 Target path: `https://rgsulselraya.xyz/activityplanner`  
